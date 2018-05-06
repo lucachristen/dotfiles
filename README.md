@@ -1,5 +1,5 @@
 # dotfiles
-My personal dotfiles for my Arch installation
+My personal dotfiles for my Arch Linux setup
 
 ## Add files to a new repository
 ```
@@ -20,17 +20,17 @@ config status
 config add .vimrc
 config commit -m "Add vimrc"
 
-# Set upstream repo
+# Set upstream repository
 config remote add origin https://github.com/lucachristen/dotfiles.git
 config push --set-upstream origin master
 ```
 
-## Install repo on new system
+## Install repository on a new system
 ```
 # Prevent recursion problems
 echo ".cfg" >> .gitignore
 
-# Clone repo
+# Clone repository
 git clone --bare git@github.com:lucachristen/dotfiles.git $HOME/.cfg
 
 # Create alias
